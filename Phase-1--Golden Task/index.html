@@ -1,0 +1,87 @@
+<!-- Coders Cave, AICTE - Web Development Intern -->
+<!-- Phase-1 -- Golden Task -->
+<!-- 2. Online Code Editor -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="Code_Editor_style.css"><!-- Css File -->
+
+</head>
+<body>
+
+    <!-- NavBar -->
+    <header>
+        <span><i class="fa-solid fa-code"></i>Editor</span>
+
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </div>
+        </div>
+
+        <nav>
+            <a class="save" href="#"><button class="save-button">Save</button></a>
+            <a class="signup" href="#"><button class="signup-button">Sign Up</button></a>
+            <a class="login" href="#"><button class="login-button">Log In</button></a>
+        </nav>
+    </header>
+
+    <!-- Content Body -->
+    <main>
+        <div class="main-container">
+            <div class="code-area">
+
+                <!-- Coding Area -->
+                <div class="editors">
+                    <label><i class="fa-brands fa-html5"></i>HTML</label>
+                    <textarea name="" placeholder="HTML" onkeyup="codeEditor()"  id="html"></textarea>
+                </div>
+    
+                <div class="editors">
+                    <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                    <textarea name="" placeholder="CSS" onkeyup="codeEditor()" id="css"></textarea>
+                </div>
+    
+                <div class="editors">
+                    <label><i class="fa-brands fa-js"></i>JavaScript</label>
+                    <textarea name="" placeholder="JavaScript" onkeyup="codeEditor()" id="js"></textarea>
+                </div>
+            </div>
+
+        
+            <!-- Display Area -->
+            <div class="showcase-area">
+                <label><i class="fa-solid fa-play"></i>Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://github.com/thakurjay7" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jayank-singh/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Designed by <a href="https://reliable-tanuki-e15627.netlify.app" target="_blank"><span class="designer-name">Jayank Singh</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awsm-->
+    <script src="https://kit.fontawesome.com/bc0eeab92a.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="Code_Editor_style.js"></script><!-- Js File -->
+</body>
+</html>
